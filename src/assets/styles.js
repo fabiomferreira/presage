@@ -3,6 +3,7 @@ const colors = {
   secondary: '#b82a28',
   white: '#fff',
   shadow: '#777',
+  border: '#ccc',
 };
 
 const spacing = {
@@ -12,10 +13,18 @@ const spacing = {
 
 const boxShadow = {
   base: `1px 1px 5px 0px ${colors.shadow}`,
-}
+};
+
+const borderRadius = '2px';
+
+const border = {
+  base: `1px solid ${colors.border}`,
+};
 
 export {
   colors,
   spacing,
   boxShadow,
+  borderRadius,
+  border,
 };

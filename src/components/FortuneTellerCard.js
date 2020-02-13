@@ -31,11 +31,11 @@ const Col = styled.div`
   width: calc(${props => props.size / 12} * 100%);
 `;
 
-const onClick = () => console.log('Você selecionou um(a) cartomante!');
+const onClick = () => alert('Você selecionou um(a) cartomante!');
 
 const FortuneTellerCard = ({data}) => 
   <StyledFortuneTellerCard>
-    <StyledCard onclick={onClick}>
+    <StyledCard onClick={onClick}>
       <Row>
         <StyledImage src={data.foto} />
         <Row>

@@ -4,6 +4,7 @@ const colors = {
   white: '#fff',
   shadow: '#777',
   border: '#ccc',
+  label: '#333',
 };
 
 const spacing = {
@@ -21,10 +22,18 @@ const border = {
   base: `1px solid ${colors.border}`,
 };
 
+const fontSize = {
+  base: '1rem',
+  small: '.5rem',
+  tiny: '.25rem',
+  label: '12px',
+};
+
 export {
   colors,
   spacing,
   boxShadow,
   borderRadius,
   border,
+  fontSize,
 };

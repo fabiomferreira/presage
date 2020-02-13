@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
 import Card from '../components/Card';
-import {Row, Col} from '../components/Layout';
-import {spacing, fontSize, colors} from '../assets/styles';
+import LabelInfo from '../components/LabelInfo';
+import {Row} from '../components/Layout';
+import {spacing} from '../assets/styles';
 
 const StyledFortuneTellerCard = styled.div`
 `;
@@ -18,12 +19,6 @@ const StyledImage = styled.img`
   margin-right: ${spacing.small}
 `;
 
-const Label = styled.label`
-  font-size: ${fontSize.label};
-  color: ${colors.label};
-  font-weight: bold;
-`;
-
 const onClick = () => alert('Você selecionou um(a) cartomante!');
 
 const FortuneTellerCard = ({data}) => 
@@ -32,14 +27,9 @@ const FortuneTellerCard = ({data}) =>
       <Row>
         <StyledImage src={data.foto} />
         <Row>
-          <Col size="12">
-            <Label>Nome</Label>
-          </Col>
-          <span>{data.nome}</span>
-          <Col size="12">
-            <Label>Descrição</Label>
-          </Col>
-          <span>{data.descricao}</span>
+          <LabelInfo label="Nome" info={data.nome} />
+          <LabelInfo label="Descrição" info={data.descricao} />
+          <LabelInfo label="Valor" info={`R$ ${data.valor}/hora`} />
         </Row>
       </Row>
     </StyledCard>

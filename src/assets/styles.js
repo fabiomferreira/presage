@@ -23,10 +23,8 @@ const border = {
 };
 
 const fontSize = {
-  base: '1rem',
-  small: '.5rem',
-  tiny: '.25rem',
   label: '12px',
+  info: '14px',
 };
 
 export {

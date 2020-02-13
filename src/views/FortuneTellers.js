@@ -28,7 +28,7 @@ const renderFortuneTellers = () => {
 
 const FortuneTellers = () => (
   <StyledFortuneTellers>
-    <PageTitle>Profissionais</PageTitle>
+    <PageTitle>Cartomantes</PageTitle>
     {renderFortuneTellers()}
   </StyledFortuneTellers>
 );

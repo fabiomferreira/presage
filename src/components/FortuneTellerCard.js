@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import Card from '../components/Card';
+import {Row, Col} from '../components/Layout';
 import {spacing, fontSize, colors} from '../assets/styles';
 
 const StyledFortuneTellerCard = styled.div`
@@ -21,14 +22,6 @@ const Label = styled.label`
   font-size: ${fontSize.label};
   color: ${colors.label};
   font-weight: bold;
-`;
-
-const Row = styled.div`
-  display: inline-block;
-`;
-
-const Col = styled.div`
-  width: calc(${props => props.size / 12} * 100%);
 `;
 
 const onClick = () => alert('Você selecionou um(a) cartomante!');
